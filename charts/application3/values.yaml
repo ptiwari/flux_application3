@@ -1,14 +1,14 @@
 replicaCount: 1
 
 image:
-  repository: "docker.io/your-dockerhub-username/application3"  # Your Docker Hub image name
+  repository: "docker.io/muhammadnaeem42/application3"  # Your Docker Hub image name
   pullPolicy: Always
   tag: "latest"
 
 service:
   name: application3
   type: ClusterIP
-  port: 5000
+  port: 80
 
 ingress:
   enabled: false
