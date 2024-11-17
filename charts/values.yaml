@@ -3,7 +3,7 @@ replicaCount: 1
 image:
   repository: "docker.io/muhammadnaeem42/application3"  # Your Docker Hub image name
   pullPolicy: Always
-  tag: "latest"
+  tag:
 
 service:
   name: application3
