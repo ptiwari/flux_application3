@@ -3,7 +3,7 @@ replicaCount: 1
 image:
   repository: "docker.io/muhammadnaeem42/application3"  # Your Docker Hub image name
   pullPolicy: Always
-  tag: "latest"
+  tag: # {"$imagepolicy": "default:application3-image-policy"}
 
 service:
   name: application3
@@ -11,8 +11,8 @@ service:
   port: 80
 
 ingress:
-  enabled: true
-  name: ""
+  enabled: false
+  name: application3-ingress
   path: /
   hosts:
     - application3.local
